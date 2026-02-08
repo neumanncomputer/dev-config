@@ -2,26 +2,31 @@
 
 開発環境の設定ファイル集
 
-## シェル
+## シェル: [fish](https://fishshell.com/)
 
-普段のターミナル作業では[fish](https://fishshell.com/)を利用。履歴ベース補完機能が便利。スクリプト用途では bash を利用。
+> [!NOTE]
+> bashと完全に互換性があるわけではないため、シェルスクリプトの実行などは bash で行う。
 
-## コマンドヒストリー管理ツール
+- 過去の入力履歴から、数文字打つだけで次に入力しそうな内容を薄いグレーで予測表示
+- 存在するコマンドなら青、存在しないコマンドなら赤で表示
 
-[Atuin](https://docs.atuin.sh/cli/)を利用。プロジェクトごとに履歴を残したり、検索したりできる。
+## コマンドヒストリー管理ツール: [Atuin](https://docs.atuin.sh/cli/)
 
-## プロンプト（シェルの表示部分）カスタマイズツール
+- ↑ キー（または Ctrl+r）を押すと専用の検索画面が立ち上がり、コマンドの一部、ディレクトリ名、実行時期などで絞り込みが可能
 
-[starship](https://starship.rs/guide/)を利用。
+## プロンプト（シェルの表示部分）カスタマイズツール: [starship](https://starship.rs/)
 
-## エディタ
+## Node.js
 
-[VSCode](https://code.visualstudio.com/)を利用。
+### バージョン管理ツール: [Volta](https://volta.sh/)
 
-## Node.js バージョン管理ツール
+## Python
 
-[Volta](https://ja.voltajs.com/guide/getting-started.html)を利用。
+### バージョン管理 & パッケージ管理ツール: [uv](https://docs.astral.sh/uv/)
 
-## Python 　バージョン管理ツール
+- バージョン管理機能とパッケージ管理機能の両方がまとまっている
+- パッケージのインストールが速い
 
-[pyenv](https://github.com/pyenv/pyenv)を利用。
+### フォーマッター: [Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
+
+### リンター: [Mypy Type Checker](https://marketplace.visualstudio.com/items?itemName=ms-python.mypy-type-checker)
