@@ -1,0 +1,14 @@
+[project]
+name = "your-project-name"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "mypy>=1.19.1",
+    "pip-audit>=2.10.0",
+    "ruff>=0.15.1",
+]
