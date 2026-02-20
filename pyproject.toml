@@ -8,7 +8,18 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "mypy>=1.19.1",
-    "pip-audit>=2.10.0",
-    "ruff>=0.15.1",
+    # --- Lint & Formatting (コードの品質) ---
+    "ruff",         # Linter & Formatter
+    "mypy",         # 型チェック
+
+    # --- Security (脆弱性診断) ---
+    "pip-audit",    # 依存ライブラリの脆弱性チェック
+    "bandit",       # Pythonコードのセキュリティ診断
+
+    # --- Testing (動作確認) ---
+    "pytest",       # テストフレームワーク
 ]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
