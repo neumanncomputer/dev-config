@@ -1,4 +1,5 @@
 {
+  // --- Python ---
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
@@ -7,6 +8,6 @@
       "source.organizeImports.ruff": "explicit"
     }
   },
-  "mypy-type-checker.importStrategy": "fromEnvironment",
-  "python.analysis.typeCheckingMode": "off"
+  "python.analysis.typeCheckingMode": "off",
+  "mypy-type-checker.importStrategy": "fromEnvironment"
 }
